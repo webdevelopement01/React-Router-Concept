@@ -15,12 +15,14 @@ import Users from './Components/Users.jsx';
 import UserDetails from './Components/UserDetails.jsx';
 import Posts from './Components/Post/Posts.jsx';
 import PostDetails from './Components/Post/PostDetails.jsx';
+import ErrorPage from './Components/ErrorPage.jsx';
 
 
 const router = new createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path:'/about',
